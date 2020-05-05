@@ -25,9 +25,11 @@ TARGET_GAPPS_ARCH := arm64
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-DEVICE_MAINTAINER := lamjiidii1
 TARGET_INCLUDE_PIXEL_CHARGER := true
 IS_PHONE := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+BLISS_BUILD_VARIANT := vanilla
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_cepheus
