@@ -91,48 +91,11 @@ void set_ro_product_prop(const std::string& prop, const std::string& value) {
 };
 
 void vendor_load_properties() {
-    std::string region;
-    std::string hardware_revision;
-    region = GetProperty("ro.boot.hwc", "GLOBAL");
-    hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
+    set_ro_product_prop("device", "cepheus");
+    set_ro_product_prop("model", "MI 9");
+    set_ro_product_prop("name", "cepheus");
+    set_ro_build_prop("fingerprint", "Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/21.3.10:user/release-keys");
 
-    std::string model;
-    std::string device;
-    std::string fingerprint;
-    std::string description;
-    std::string mod_device;
-
-    if (region == "GLOBAL") {
-        model = "Mi 9T Pro";
-        device = "raphael";
-        fingerprint =
-                "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V12.0.4.0.QFKMIXM:user/release-keys";
-        description = "raphael-user 10 QKQ1.190825.002 V12.0.4.0.QFKMIXM release-keys";
-        mod_device = "raphael_global";
-    } else if (region == "CN") {
-        model = "Redmi K20 Pro";
-        device = "raphael";
-        fingerprint =
-                "Xiaomi/raphael/raphael:10/QKQ1.190825.002/V12.0.6.0.QFKCNXM:user/release-keys";
-        description = "raphael-user 10 QKQ1.190825.002 V12.0.6.0.QFKCNXM release-keys";
-    } else if (region == "INDIA") {
-        model = "Redmi K20 Pro";
-        device = "raphaelin";
-        fingerprint =
-                "Xiaomi/raphaelin/raphaelin:10/QKQ1.190825.002/V12.0.4.0.QFKINXM:user/release-keys";
-        description = "raphaelin-user 10 QKQ1.190825.002 V12.0.4.0.QFKINXM release-keys";
-        mod_device = "raphaelin_in_global";
-    }
-
-    set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_product_prop("device", device);
-    set_ro_product_prop("model", model);
-    property_override("ro.build.description", description.c_str());
-    if (mod_device != "") {
-        property_override("ro.product.mod_device", mod_device.c_str());
-    }
-
-    property_override("ro.boot.hardware.revision", hardware_revision.c_str());
-
-    load_dalvikvm_properties();
+    // description
+    property_override("ro.build.description", "cepheus-user 11 RKQ1.200826.002 21.3.10 release-keys");
 }
