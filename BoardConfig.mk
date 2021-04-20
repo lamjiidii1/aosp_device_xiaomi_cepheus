@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/raphael
+DEVICE_PATH := device/xiaomi/cepheus
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,7 +37,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
+TARGET_OTA_ASSERT_DEVICE := cepheus
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
