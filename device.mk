@@ -276,7 +276,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.raphael
+    android.hardware.lights-service.cepheus
 
 # Media
 PRODUCT_PACKAGES += \
