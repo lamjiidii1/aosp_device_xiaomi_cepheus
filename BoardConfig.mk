@@ -121,8 +121,8 @@ BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := raphael_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
+TARGET_KERNEL_CONFIG := cepheus_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/cepheus
 #Disable appended dtb
 TARGET_KERNEL_APPEND_DTB := true
 # Set Header version for bootimage
@@ -221,7 +221,7 @@ USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/xiaomi/raphael/sepolicy/raphael-sepolicy.mk
+include device/xiaomi/cepheus/sepolicy/cepheus-sepolicy.mk
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cepheus
@@ -257,4 +257,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/xiaomi/raphael/BoardConfigVendor.mk
+include vendor/xiaomi/cepheus/BoardConfigVendor.mk

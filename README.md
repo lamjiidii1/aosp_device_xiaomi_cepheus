@@ -1,11 +1,11 @@
 Copyright (C) 2021 The PixelExperience Project
 
-Device configuration for Xiaomi Mi 9T Pro / Redmi K20 Pro
+Device configuration for Xiaomi Mi 9
 =========================================
 
-The Xiaomi Mi 9T Pro / Redmi K20 Pro (codenamed _"raphael"_) is a high-end smartphone from Xiaomi.
+The Xiaomi Mi 9 (codenamed _"cepheusl"_) is a high-end smartphone from Xiaomi.
 
-It was announced and released in August 2019.
+It was announced and released in March 2019.
 
 ## Device specifications
 
@@ -17,13 +17,13 @@ GPU     | Adreno 640
 Memory  | 6/8 GB RAM
 Shipped Android Version | 9.0 with MIUI 10
 Storage | 64/128/256 GB
-Battery | Non-removable Li-Po 4000 mAh battery
+Battery | Non-removable Li-Po 3300 mAh battery
 Display | 1080 x 2340 pixels, 19.5:9 ratio, 6.39 inches, AMOLED HDR (~403 ppi density)
-Camera  | 48MP(Primary) 8MP(Ultra-wide) 13MP(Telephoto)
+Camera  | 48MP(Primary) 16MP(Ultra-wide) 12MP(Telephoto)
 
 ## Device picture
 
-![Xiaomi Mi 9T Pro / Redmi K20 Pro](https://xiaomi-mi.com/uploads/CatalogueImage/k20-pro%20(2)_17557_1559503979.jpg "Xiaomi Mi 9T Pro / Redmi K20 Pro in black")
+![Xiaomi Mi 9](https://www.notebookcheck.biz/uploads/tx_nbc2/XiaomiMi9__1_.JPG "Xiaomi Mi 9 in black")
 
 ## Proprietary-files.txt
 All unpinned blobs are extracted from raphael-user 11 RKQ1.200826.002 21.2.3 release-keys
