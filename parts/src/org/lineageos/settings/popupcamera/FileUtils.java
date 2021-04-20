@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.utils;
+package org.lineageos.settings.popupcamera;
 
 import android.util.Log;
 
