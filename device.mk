@@ -395,7 +395,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_raphael
+    librecovery_updater_cepheus
 
 # RenderScript
 PRODUCT_PACKAGES += \

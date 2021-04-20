@@ -5,7 +5,7 @@
 //
 
 cc_library_static {
-    name: "librecovery_updater_raphael",
+    name: "librecovery_updater_cepheus",
     include_dirs: [
         "bootable/recovery",
         "bootable/recovery/edify/include",
