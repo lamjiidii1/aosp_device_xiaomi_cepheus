@@ -44,9 +44,9 @@
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 #define DIM_LAYER_OFF_DELAY 85ms
 
-#define FOD_SENSOR_X 445
-#define FOD_SENSOR_Y 1931
-#define FOD_SENSOR_SIZE 190
+#define FOD_SENSOR_X 455
+#define FOD_SENSOR_Y 1920
+#define FOD_SENSOR_SIZE 173
 
 #define DIM_LAYER_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm"
 

@@ -88,7 +88,7 @@ BOARD_HAVE_QCOM_FM := true
 
 # FOD
 TARGET_SURFACEFLINGER_FOD_LIB := \
-    //$(DEVICE_PATH):libfod_extension.raphael
+    //$(DEVICE_PATH):libfod_extension.cepheus
 TARGET_USES_FOD_ZPOS := true
 
 # HIDL
