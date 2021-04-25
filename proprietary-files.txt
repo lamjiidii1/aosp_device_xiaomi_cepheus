@@ -927,6 +927,10 @@ vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/lib/libqcodec2.so
 vendor/lib/libcodec2_vndk.so
 
+# Media-Hardware
+vendor/lib/libarbitrarybytes.so
+vendor/lib/libstagefrighthw.so
+
 # MDM
 vendor/bin/ks
 vendor/bin/mdm_helper
@@ -1149,6 +1153,9 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/lib64/vendor.qti.ims.callcapability@1.0.so
+system_ext/lib64/vendor.qti.ims.factory@1.0.so
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/ATFWD-daemon
@@ -1355,6 +1362,10 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/config/vl53l1_tof_0.json
 vendor/etc/sensors/sns_reg_config
+vendor/etc/sensors/config/bmp285_0.json
+vendor/etc/sensors/config/lsm6ds3c_0.json
+vendor/etc/sensors/config/sm8150_bmp285_0.json
+vendor/etc/sensors/config/sm8150_lsm6ds3c_0.json
 
 # Sensors (Proto)
 vendor/etc/sensors/proto/descriptor.proto
@@ -1471,6 +1482,12 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/libssccalapi.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/bin/init.qcom.sensors.sh
+vendor/etc/elliptic_sensor.xml
+vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libultrasound.so
+vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.touch.so
 
 # Soter
 -app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
@@ -1556,6 +1573,9 @@ vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 # TFTP
 vendor/bin/tftp_server
 vendor/etc/init/vendor.qti.tftp.rc
+
+# Pasrmanager
+vendor/lib64/libdng_sdk.so
 
 # Thermal
 vendor/bin/thermal-engine
