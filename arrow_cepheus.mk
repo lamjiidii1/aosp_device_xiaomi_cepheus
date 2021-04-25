@@ -19,6 +19,9 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+# GApps
+TARGET_GAPPS_ARCH := arm64
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -32,10 +35,13 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9
 PRODUCT_MANUFACTURER := Xiaomi
 
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210405.005 7181113 release-keys" \
     PRODUCT_NAME="cepheus"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
 
-# GApps
-TARGET_GAPPS_ARCH := arm64
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
