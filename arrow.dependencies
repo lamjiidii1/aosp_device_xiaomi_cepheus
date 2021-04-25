@@ -6,5 +6,9 @@
   {
     "repository": "IMMENS1TY/kernel_xiaomi_cepheus",
     "target_path": "kernel/xiaomi/cepheus",
-  }
+  },
+ {
+   "repository": "android_packages_apps_GCamGOPrebuilt",
+   "target_path": "packages/apps/GCamGOPrebuilt"
+ }
 ]

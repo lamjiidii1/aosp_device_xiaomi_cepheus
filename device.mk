@@ -170,6 +170,10 @@ PRODUCT_PACKAGES += \
     hwcomposer.msmnile \
     memtrack.msmnile
 
+# Camera GO
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
