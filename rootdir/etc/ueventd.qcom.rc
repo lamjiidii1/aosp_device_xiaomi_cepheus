@@ -354,7 +354,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/kmsg                                               0620   root       system
 
 #D2TW
-/dev/input/event3                                       0666   system     system
+/dev/input/event4                                       0666   system     system
 
 # LED class devices
 /sys/class/leds/green     delay_on        0640    system    system

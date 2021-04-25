@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,15 +42,15 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE: {
-            int fd = open("/dev/input/event3", O_RDWR);
+            int fd = open("/dev/input/event4", O_RDWR);
             struct input_event ev;
             ev.type = EV_SYN;
             ev.code = SYN_CONFIG;
             ev.value = enabled ? kInputEventWakeupModeOn : kInputEventWakeupModeOff;
             write(fd, &ev, sizeof(ev));
             close(fd);
-	    return true;
         }
+        return true;
         default:
             return false;
     }
