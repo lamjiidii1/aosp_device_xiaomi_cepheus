@@ -220,10 +220,6 @@ USE_SENSOR_MULTI_HAL := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/xiaomi/cepheus-sepolicy/cepheus-sepolicy.mk
 
-# Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cepheus
-TARGET_RECOVERY_DEVICE_MODULES := libinit_cepheus
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
