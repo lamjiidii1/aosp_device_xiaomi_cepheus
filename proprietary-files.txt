@@ -50,6 +50,7 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 
 # AptX - from coral-user-11-RQ1A.210205.004-7038034-release-keys
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
@@ -156,7 +157,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
-
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 # Bluetooth (A2DP)
 vendor/lib/liba2dpoffload.so
 vendor/lib64/liba2dpoffload.so
@@ -592,6 +593,7 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 #vendor/lib/libwvkeybox.so
 #vendor/lib64/libwvkeybox.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # DRM widevine - from MIUI V12.0.1.0.QFKMIXM
 vendor/lib64/liboemcrypto.so|b99e70b63bb2fa92fd5660382b6b16e1998968cc
@@ -604,6 +606,9 @@ widevine.b05:vendor/firmware/widevine.b05|44552253e4a518155e8620f5b4a79f30fb2e35
 widevine.b06:vendor/firmware/widevine.b06|4da05c9c81331f41e819674fe09d7fdf19f1e588
 widevine.b07:vendor/firmware/widevine.b07|ba319c2e5b5c9b8cd49a48b91e959a285e79d39e
 widevine.mdt:vendor/firmware/widevine.mdt|8e096e8385f2b2cbb4bdf8734dd8613f0f10aa1c
+
+# Consumerir
+vendor/lib64/hw/consumerir.default.so
 
 # FASTCV
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
