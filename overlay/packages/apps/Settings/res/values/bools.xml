@@ -14,4 +14,5 @@
 <resources>
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+    <item name="fingerprint_sensor_location_fraction_y" type="fraction">78%</item>
 </resources>
