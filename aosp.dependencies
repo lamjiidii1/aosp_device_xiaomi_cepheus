@@ -1,14 +1,10 @@
 [
   {
-    "repository": "vendor_xiaomi_cepheus",
+    "repository": "lamjiidii1/vendor_xiaomi_cepheus",
     "target_path": "vendor/xiaomi/cepheus",
-    "branch": "eleven",
-    "remote": "pixel-devices-blobs"
   },
   {
-    "repository": "kernel_xiaomi_cepheus",
+    "repository": "IMMENS1TY/kernel_xiaomi_cepheus",
     "target_path": "kernel/xiaomi/cepheus",
-    "branch": "eleven",
-    "remote": "pixel-devices"
   }
 ]
