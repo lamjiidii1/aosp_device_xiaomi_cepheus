@@ -1709,3 +1709,23 @@ vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib/libwfdaac.so
+system_ext/lib/libwfdmmsrc_system.so
+system_ext/lib/libwfdnative.so
+system_ext/lib/libwfdconfigutils.so
+system_ext/lib/libwfddisplayconfig.so
+system_ext/lib/libwfdavenhancements.so
+system_ext/lib/libwfdservice.so
+-system_ext/priv-app/WfdService/WfdService.apk
+system_ext/etc/wfdconfigsink.xml
+system_ext/etc/seccomp_policy/wfdservice.policy
+system_ext/lib64/libwfdconfigutils.so
+system_ext/lib64/libwfddisplayconfig.so
+system_ext/lib64/libwfdnative.so
+vendor/lib/libwfdaac_vendor.so
+
+# WiFi Display - HDCP
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/libmm-hdcpmgr.so
