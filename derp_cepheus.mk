@@ -16,20 +16,18 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
-
-# GApps
-TARGET_GAPPS_ARCH := arm64
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-DEVICE_MAINTAINER := lamjiidii1
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
+EXTRA_FOD_ANIMATIONS := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_cepheus
+PRODUCT_NAME := derp_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9

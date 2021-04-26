@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_cepheus.mk
+    $(LOCAL_DIR)/derp_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_cepheus-user \
-    arrow_cepheus-userdebug \
-    arrow_cepheus-eng
+    derp_cepheus-user \
+    derp_cepheus-userdebug \
+    derp_cepheus-eng
