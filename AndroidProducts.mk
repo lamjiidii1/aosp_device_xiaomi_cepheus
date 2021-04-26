@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_cepheus.mk
+    $(LOCAL_DIR)/arrow_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_cepheus-user \
-    aosp_cepheus-userdebug \
-    aosp_cepheus-eng
+    arrow_cepheus-user \
+    arrow_cepheus-userdebug \
+    arrow_cepheus-eng

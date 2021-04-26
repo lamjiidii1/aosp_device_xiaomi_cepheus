@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "lamjiidii1/vendor_xiaomi_cepheus",
+    "target_path": "vendor/xiaomi/cepheus",
+  },
+  {
+    "repository": "IMMENS1TY/kernel_xiaomi_cepheus",
+    "target_path": "kernel/xiaomi/cepheus",
+  },
+ {
+   "repository": "ArrowOS-Devices/android_packages_apps_GCamGOPrebuilt",
+   "target_path": "packages/apps/GCamGOPrebuilt"
+ },
+ {
+   "repository": "lamjiidii1/android_device_xiaomi_cepheus-sepolicy",
+   "target_path": "device/xiaomi/cepheus-sepolicy"
+ },
+ {
+   "repository": "lineage/android_hardware_xiaomi",
+   "target_path": "hardware/xiaomi"
+ }
+]

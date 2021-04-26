@@ -16,20 +16,32 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
+
+# GApps
+TARGET_GAPPS_ARCH := arm64
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+DEVICE_MAINTAINER := lamjiidii1
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := arrow_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9
 PRODUCT_MANUFACTURER := Xiaomi
 
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210405.005 7181113 release-keys" \
     PRODUCT_NAME="cepheus"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys
 
-# GApps
-TARGET_GAPPS_ARCH := arm64
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
