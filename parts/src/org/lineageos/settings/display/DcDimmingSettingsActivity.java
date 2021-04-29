@@ -15,21 +15,19 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.lineageos.settings.display;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class DozeSettingsActivity extends PreferenceActivity {
-    private static final String TAG_DOZE = "doze";
+public class DcDimmingSettingsActivity extends PreferenceActivity {
+
+    private static final String TAG_DCDIMMING = "dcdimming";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getFragmentManager()
-                .beginTransaction()
-                .replace(android.R.id.content, new DozeSettingsFragment(), TAG_DOZE)
-                .commit();
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                new DcDimmingSettingsFragment(), TAG_DCDIMMING).commit();
     }
 }

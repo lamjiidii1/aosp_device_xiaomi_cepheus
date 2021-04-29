@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2015-2016 The CyanogenMod Project
- *               2017 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,21 +14,33 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package org.lineageos.settings.thermal;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.view.MenuItem;
 
-public class DozeSettingsActivity extends PreferenceActivity {
-    private static final String TAG_DOZE = "doze";
+public class ThermalActivity extends PreferenceActivity {
+    private static final String TAG_THERMAL = "thermal";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         getFragmentManager()
                 .beginTransaction()
-                .replace(android.R.id.content, new DozeSettingsFragment(), TAG_DOZE)
+                .replace(android.R.id.content, new ThermalSettingsFragment(), TAG_THERMAL)
                 .commit();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
