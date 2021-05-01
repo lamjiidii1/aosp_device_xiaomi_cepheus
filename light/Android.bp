@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light@2.0-service.cepheus",
+    name: "android.hardware.light@2.0-service.raphael",
     defaults: ["hidl_defaults"],
-    init_rc: ["hidl/android.hardware.light@2.0-service.cepheus.rc"],
+    init_rc: ["hidl/android.hardware.light@2.0-service.raphael.rc"],
     srcs: [
         "hidl/service.cpp",
         "hidl/Light.cpp",
@@ -32,10 +32,10 @@ cc_binary {
 }
 
 cc_binary {
-    name: "android.hardware.lights-service.cepheus",
+    name: "android.hardware.lights-service.raphael",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.lights.cepheus.rc"],
-    vintf_fragments: ["aidl/android.hardware.lights.cepheus.xml"],
+    init_rc: ["aidl/android.hardware.lights.raphael.rc"],
+    vintf_fragments: ["aidl/android.hardware.lights.raphael.xml"],
     vendor: true,
     shared_libs: [
         "libbase",
