@@ -218,7 +218,7 @@ USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/xiaomi/cepheus-sepolicy/cepheus-sepolicy.mk
+include device/xiaomi/cepheus/sepolicy/cepheus-sepolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
