@@ -274,7 +274,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.raphael
+    android.hardware.light@2.0-service.raphael
 
 # Media
 PRODUCT_PACKAGES += \
