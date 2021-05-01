@@ -107,7 +107,8 @@ static void handleNotification(const LightState& state) {
             break;
         case Flash::TIMED:
             /* Blinking */
-            set(GREEN_LED BREATH, 1);
+            set(GREEN_LED DELAY_OFF, state.flashOnMs);
+            set(GREEN_LED DELAY_ON, state.flashOffMs);
             break;
         case Flash::NONE:
         default:
